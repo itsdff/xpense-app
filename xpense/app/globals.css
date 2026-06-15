@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist: 'Geist', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-geist), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Light theme */
+:root {
+  --bg: #ffffff;
+  --bg2: #f8f8f7;
+  --bg3: #f1f0ef;
+  --border: rgba(0,0,0,0.08);
+  --border2: rgba(0,0,0,0.14);
+  --text: #111110;
+  --text2: #6f6e6a;
+  --text3: #a09fa0;
+  --accent: #1a1a19;
+  --accent-fg: #ffffff;
+  --green: #1D9E75;
+  --green-bg: #E1F5EE;
+  --green-text: #085041;
+  --red: #E24B4A;
+  --red-bg: #FCEBEB;
+  --red-text: #791F1F;
+  --amber: #BA7517;
+  --amber-bg: #FAEEDA;
+  --amber-text: #633806;
+  --blue: #185FA5;
+  --blue-bg: #E6F1FB;
+  --blue-text: #0C447C;
+}
+
+.dark {
+  --bg: #111110;
+  --bg2: #1a1a19;
+  --bg3: #222221;
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --text: #edece9;
+  --text2: #a09fa0;
+  --text3: #6f6e6a;
+  --accent: #edece9;
+  --accent-fg: #111110;
+  --green: #5DCAA5;
+  --green-bg: #04342C;
+  --green-text: #9FE1CB;
+  --red: #F09595;
+  --red-bg: #501313;
+  --red-text: #F7C1C1;
+  --amber: #EF9F27;
+  --amber-bg: #412402;
+  --amber-text: #FAC775;
+  --blue: #85B7EB;
+  --blue-bg: #042C53;
+  --blue-text: #B5D4F4;
+}
+
+input, select, textarea {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus, select:focus {
+  border-color: var(--text2);
+}
+
+input::placeholder {
+  color: var(--text3);
+}
